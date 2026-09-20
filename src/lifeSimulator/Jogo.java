@@ -1,5 +1,6 @@
 package lifeSimulator;
 
+import Coletivo.Pessoa;
 import Eventos.Acoes;
 import java.util.Scanner;
 
@@ -69,24 +70,32 @@ public class Jogo {
         int opcao = 0;
         
         System.out.println("1 - Proximo ano");
-        System.out.println("2 - Trabalhar");
-        System.out.println("3 - Estudar");
+                opcao = sc.nextInt();
+        
+        if(pessoa.getIdade() >= 6) {
+            System.out.println("2 - Estudar");            
+        }
+        
+        if (pessoa.getIdade() >= 14) {
+            System.out.println("3 - Trabalhar");
+        }
+        
         System.out.println("4 - Sair");
         opcao = sc.nextInt();
         switch(opcao) {
             case 1: 
                 passarAno();
             case 2:
-                acoes.trabalhar(pessoa);
+                acoes.estudar();     
             case 3:
-                acoes.estudar();
+                acoes.trabalhar(pessoa);                 
             case 4:
                 break;
             default:
                 System.out.println("Opcao invalida\n");
                 System.out.println("1 - Proximo ano");
-                System.out.println("2 - Trabalhar");
-                System.out.println("3 - Estudar");
+                System.out.println("2 - Estudar");
+                System.out.println("3 - Trabalhar");
                 System.out.println("4 - Sair");       
                 opcao = sc.nextInt();
         }   

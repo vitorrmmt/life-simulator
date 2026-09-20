@@ -1,4 +1,4 @@
-package lifeSimulator;
+package Coletivo;
 
 import Emprego.Emprego;
 import java.util.Random;

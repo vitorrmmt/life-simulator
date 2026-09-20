@@ -1,6 +1,6 @@
 package Financeiro;
 
-import lifeSimulator.Pessoa;
+import Coletivo.Pessoa;
 
 public class Financeiro {
     private Pessoa pessoa;

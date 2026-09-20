@@ -3,7 +3,7 @@ package Eventos;
 import Emprego.Emprego;
 import Financeiro.Financeiro;
 import java.util.Random;
-import lifeSimulator.Pessoa;
+import Coletivo.Pessoa;
 
 public class Acoes {
     Random random = new Random();
